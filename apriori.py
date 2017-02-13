@@ -3,6 +3,14 @@ from itertools import dropwhile
 
 class APriori():
 
+    """
+    Frequent itemset miner class to implement Apriori algorithm using standard
+    libraries in Python 3. Input is a database of per-row transactions of
+    space-separated integers (or string representations of integers) for items.
+    Writes out a text file with one row per frequent itemset, with set size,
+    frequency, and constiutent items indicated in that order.
+    """
+
     def __init__(self,data,out):
 
         self.data = data
